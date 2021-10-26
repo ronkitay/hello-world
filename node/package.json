@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc -p tsconfig.json",
         "start": "node dist/hello-world.js",
-        "dev": "tsc -w -p tsconfig.json&; "
+        "dev": "tsc -p tsconfig.json && node dist/hello-world.js"
     },
     "author": "Ron Kitay",
     "license": "MIT",
