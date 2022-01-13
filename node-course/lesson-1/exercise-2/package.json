@@ -1,0 +1,13 @@
+{
+    "name": "node-course",
+    "version": "1.0.0",
+    "scripts": {
+        "run": "node Exercise_2.js"
+    },
+    "author": "Ron Kitay",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^16.11.6",
+        "typescript": "^4.5.4"
+    }
+}
