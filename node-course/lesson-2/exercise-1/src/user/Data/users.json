@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "phone": "052-2222222",
+            "address": {
+                "city": "London",
+                "Country": "UK"
+            }
+        },
+        {
+            "id": 2,
+            "phone": "052-3333333",
+            "address": {
+                "city": "New York",
+                "Country": "USA"
+            }
+        },
+        {
+            "id": 3,
+            "phone": "052-3333333",
+            "address": {
+                "city": "New York",
+                "Country": "USA"
+            }
+        },
+        {
+            "id": 9,
+            "phone": "052-3333333",
+            "address": {
+                "city": "New York",
+                "Country": "USA"
+            }
+        }
+    ]
+}

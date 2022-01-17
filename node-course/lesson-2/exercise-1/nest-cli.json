@@ -1,0 +1,9 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "assets":[ 
+      { "include": "user/Data/*.json", "watchAssets": true }
+    ]
+  }
+}
