@@ -58,6 +58,21 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Environment settings
+
+Define a `.env` file with the following structure:
+
+```env
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#using-environment-variables
+
+# Local Mongo:
+# DATABASE_URL="mongodb+srv://mongoadmin:secret@0.0.0.0:27017/mongo?retryWrites=false&w=majority" 
+
+# Remote Mongo:
+DATABASE_URL="mongodb+srv://<user>:<password>@<cluster-domain>.mongodb.net/<database-name>>?retryWrites=true&w=majority"
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
