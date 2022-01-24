@@ -8,7 +8,6 @@ export class MoviesService {
     async getMovies(): Promise<MovieDTO[]> {
         let response = await axios.get("https://api.tvmaze.com/shows");
 
-        console.log(response.data);
         return response.data.map(movie => { 
             let movieDTO = new MovieDTO();
             movieDTO.id = movie.id;
