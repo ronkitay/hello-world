@@ -20,6 +20,6 @@ describe('PetsController', () => {
 
   it('should return data', async () => {
     let allPets = await controller.getAll();
-    expect(allPets).toHaveLength(12);
+    expect(allPets).toHaveLength(2);
   });
 });
