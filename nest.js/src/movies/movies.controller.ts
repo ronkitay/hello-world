@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe, Put } from '@nestjs/common';
 import { MovieDTO } from './movie.dto';
 import { MoviesService } from './movies.service';
 
@@ -10,6 +10,12 @@ export class MoviesController {
     @Get() 
     getMovies() : Promise<MovieDTO[]> {
         return this.service.getMovies();
+    }
+
+    @Get(":id") 
+    async getMovie(@Param("id", ParseIntPipe) theId: number)  {
+        let allMovies = await this.service.getMovies();
+        return allMovies.filter(movie => movie.id == theId);
     }
 
 }
