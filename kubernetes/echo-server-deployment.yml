@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  creationTimestamp: null
+  labels:
+    run: echo-server
+  name: echo-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: echo-server
+  strategy: {}
+  template:
+    metadata: 
+      creationTimestamp: null
+      labels:
+        run: echo-server
+    spec:
+      containers:
+        - image: ealen/echo-server
+          name: echo-server
+          ports:
+            - containerPort: 80
+          resources: {}
+status: {}
