@@ -1,0 +1,8 @@
+HELLO_WORLD_HOME=${BASE_DIR}/hello-world
+
+complete -W "$(ls ${HELLO_WORLD_HOME})" gohelloworld
+function gohelloworld() {
+  rgb 50 0 180
+  cd ${HELLO_WORLD_HOME}
+  smart_change_dir_to_child $*
+}
