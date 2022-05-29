@@ -1,6 +1,6 @@
 HELLO_WORLD_HOME=${BASE_DIR}/hello-world
 
-complete -W "$(ls ${HELLO_WORLD_HOME})" gohelloworld
+complete -W "$(cd ${HELLO_WORLD_HOME} && fd --strip-cwd-prefix -t d -H --max-depth 1 -E .git)" gohelloworld
 function gohelloworld() {
   rgb 50 0 180
   cd ${HELLO_WORLD_HOME}
