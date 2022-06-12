@@ -3,13 +3,13 @@
 ## Compiling
 
 ```bash
-rustc helloworld.rs
+cargo build
 ```
 
 ## Running
 
 ```bash
-./helloworld.rs
+target/debug/helloworld
 ```
 
 
