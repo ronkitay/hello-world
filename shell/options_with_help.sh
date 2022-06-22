@@ -64,7 +64,7 @@ if [[ -z "${a}" || -z ${MANDATORY_PARAM} ]]; then
 fi
 
 printf "Got -a = ${a}\n"
-if ! [[ -z "${b}" ]]; then
+if [[ -n "${b}" ]]; then
     printf "Got -b = ${b}\n"
 fi
 
