@@ -1,7 +1,7 @@
 #!/bin/sh
 
 help() { 
-    if [[ -z "${SCRIPT}" ]];
+    if [ -z "${SCRIPT}" ];
     then
         SCRIPT=`basename $0`
     fi
@@ -34,7 +34,7 @@ help() {
     exit 1
 }
 
-if [[ $1 == '-h' ||  $1 == '--help' ]]; 
+if [ "$1" = '-h' ] || [ "$1" = '--help' ]; 
 then
     help
 fi
@@ -59,12 +59,12 @@ shift $((OPTIND-1))
 
 MANDATORY_PARAM=$1
 
-if [[ -z "${a}" || -z ${MANDATORY_PARAM} ]]; then
+if [ -z "${a}" ] || [ -z ${MANDATORY_PARAM} ]; then
     help
 fi
 
 printf "Got -a = ${a}\n"
-if [[ -n "${b}" ]]; then
+if [ -n "${b}" ]; then
     printf "Got -b = ${b}\n"
 fi
 
