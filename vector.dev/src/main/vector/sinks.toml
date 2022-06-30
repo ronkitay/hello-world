@@ -9,3 +9,8 @@ target = "stdout"
 [sinks.my_blackhole_sink]
 type = "blackhole"
 inputs = [ "my_transform" ]
+
+[sinks.prometheus_exporter]
+type = "prometheus_exporter"
+inputs = [ "vector_metrics" ]
+address = "0.0.0.0:9090"
