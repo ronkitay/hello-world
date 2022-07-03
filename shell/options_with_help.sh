@@ -9,13 +9,13 @@ help() {
     printf "<SOME SCRIPT DESCRIPTION>\n"
     printf "\n"
     printf "Usage:\n"
-    printf "\t${SCRIPT} -a <mandatory-option> [-b <optional option>] MANDATORY_PARAM [OPTIONAL_PARAM]\n"
+    printf "\t${SCRIPT} -a|--long-a <mandatory-option> [-b|--long-b <optional option>] MANDATORY_PARAM [OPTIONAL_PARAM]\n"
     printf "\n"
     printf "Options:\n"
-    printf "\t-a:\n"
+    printf "\t-a, --long-a:\n"
     printf "\tSOME EXPLENATION ABOUT '-a'.\n"
     printf "\n"
-    printf "\t-b:\n"
+    printf "\t-b, --long-b:\n"
     printf "\tSOME EXPLENATION ABOUT '-b'.\n"
     printf "\n"
     printf "MANDATORY_PARAM:\n"
@@ -34,14 +34,21 @@ help() {
     exit 1
 }
 
-if [ "$1" = '-h' ] || [ "$1" = '--help' ]; 
-then
-    help
-fi
+for arg in "$@"; do
+  shift
+  case "$arg" in
+    '--help')           set -- "$@" '-h'   ;;
+    '--long-a')         set -- "$@" '-a'   ;;
+    '--long-b')         set -- "$@" '-b'   ;;
+    *)                  set -- "$@" "$arg" ;;
+  esac
+done
 
-
-while getopts ":a:b:" option; do
+while getopts ":h:a:b:" option; do
     case "${option}" in
+        h)
+            help
+            ;;    
         a)
             a=${OPTARG}
             # SOME HANDLING AND VALIDATION
