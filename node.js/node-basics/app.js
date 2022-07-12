@@ -1,7 +1,5 @@
+require("./consoleBasics")();
 
-const consoleBasics = require('./consoleBasics');
-consoleBasics.run()
+require("./dateAndTime")();
 
-const collections = require('./collections');
-collections.run()
-
+require("./collections")();
