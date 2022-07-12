@@ -1,12 +1,11 @@
 function demoLog() {
-    console.log("Using 'console.log' to print stuff");
+  console.log("Using 'console.log' to print stuff");
 }
 
+module.exports = () => {
+  console.log(`\n=======================================`);
+  console.log(`======== Module: Console     ==========`);
+  console.log(`=======================================\n`);
 
-module.exports.run = () => {
-    console.log(`\n=======================================`);
-    console.log(`======== Module: Console     ==========`);
-    console.log(`=======================================\n`);
-
-    demoLog();
-}
+  demoLog();
+};
