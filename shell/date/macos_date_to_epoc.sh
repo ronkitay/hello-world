@@ -1,7 +1,0 @@
-#!/bin/sh
-
-INPUT_FORMAT="%Y-%m-%d %H:%M:%S"
-INPUT_VALUE="2022-02-01 00:00:00"
-OUTPUT_FORMAT="+%s"
-
-date -j -f "${INPUT_FORMAT}" "${INPUT_VALUE}" "${OUTPUT_FORMAT}"
