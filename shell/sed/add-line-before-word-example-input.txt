@@ -1,4 +1,0 @@
-This is a text file with the word WORD in it
-in several lines, but only in specific lines
-you will see the effect of running the script
-which adds a line for every original line with the word WORD in it.
