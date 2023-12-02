@@ -1,1 +1,0 @@
-SCRIPT=`basename $0`
