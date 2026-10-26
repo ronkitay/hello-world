@@ -8,7 +8,7 @@ packer {
 }
 
 source "docker" "alpine" {
-  image  = "alpine:3.15.2"
+  image  = "alpine:3.24.3"
   commit = true
 }
 

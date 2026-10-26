@@ -1,2 +1,2 @@
-apache-airflow==2.9.0
-boto3==1.26.54
+apache-airflow==3.3.2
+boto3==1.40.0
