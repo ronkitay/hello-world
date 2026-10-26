@@ -22,19 +22,19 @@ helm create <name>
 ## Template Testing
 
 ```bash
-helm template . --set "image.repository"="ealen/echo-server" --set "image.tag"="latest"
+helm template .
 ```
 
 ## Installation
 
 ```bash
-helm install echo-server . --set "image.repository"="ealen/echo-server" --set "image.tag"="latest"
+helm install echo-server .
 ```
 
 ## Upgrade
 
 ```bash
-helm upgrade echo-server . --set "image.repository"="ealen/echo-server" --set "image.tag"="latest" --set "replicaCount"=2
+helm upgrade echo-server . --set "replicaCount"=2
 ```
 
 ## Query
@@ -49,7 +49,7 @@ Example:
 
 ```text
 NAME                NAMESPACE   REVISION   UPDATED                                   STATUS     CHART                APP VERSION
-echo-server         ronk        3          2022-04-05 11:29:52.414111 +0300 IDT      deployed   echo-server-0.1.0    1.16.0
+echo-server         ronk        3          2022-04-05 11:29:52.414111 +0300 IDT      deployed   echo-server-0.2.0    43
 ```
 
 ### Chart History

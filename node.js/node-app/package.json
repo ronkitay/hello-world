@@ -1,17 +1,17 @@
 {
-    "name": "hello-world",
-    "version": "1.0.0",
-    "description": "Displays 'Hello World' when calling the API",
-    "main": "game.ts",
-    "scripts": {
-        "build": "tsc -p tsconfig.json",
-        "start": "node dist/game.js",
-        "dev": "tsc -p tsconfig.json && node dist/game.js"
-    },
-    "author": "Ron Kitay",
-    "license": "MIT",
-    "dependencies": {
-        "@types/node": "^16.11.6",
-        "typescript": "^4.5.4"
-    }
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Displays 'Hello World' when calling the API",
+  "main": "game.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/game.js",
+    "dev": "tsc -p tsconfig.json && node dist/game.js"
+  },
+  "author": "Ron Kitay",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3"
+  }
 }

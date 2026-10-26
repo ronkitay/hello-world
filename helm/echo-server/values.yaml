@@ -5,10 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: mendhak/http-https-echo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "43"
+
+containerPort: 8080
 
 imagePullSecrets: []
 nameOverride: ""

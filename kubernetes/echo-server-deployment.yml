@@ -18,9 +18,9 @@ spec:
         run: echo-server
     spec:
       containers:
-        - image: ealen/echo-server
+        - image: mendhak/http-https-echo:43
           name: echo-server
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources: {}
 status: {}

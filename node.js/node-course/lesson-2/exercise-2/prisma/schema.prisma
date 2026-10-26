@@ -1,9 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["mongoDb"]
 }
 
 datasource db {
@@ -12,7 +8,7 @@ datasource db {
 }
 
 model car {
-  id String @id  @default(dbgenerated()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
   Model String
   Color String
   Year Int

@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Param, Post, Put, UseInterceptors } from '@nestjs/common';
-import { PriceVerifierInterceptor } from 'src/price-verifier.interceptor';
-import { RichCustomerAbuserInterceptor } from 'src/rich-customer-abuser.interceptor';
+import { PriceVerifierInterceptor } from '../price-verifier.interceptor';
+import { RichCustomerAbuserInterceptor } from '../rich-customer-abuser.interceptor';
 import { ProductDTO } from './product.dto';
 import { ProductService } from './product.service';
 
